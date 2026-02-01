@@ -53,7 +53,7 @@ if section == "About":
     col1, col2 = st.columns([1, 2])
 
     with col1:
-        st.image("/Users/naledikhati/Downloads/streamlit_files/132228_Computational-chemistry-concept_GettyImages-503260821_credit-DigitalVision-Vectors_Getty-Images.jpg",
+        st.image("https://d2cbg94ubxgsnp.cloudfront.net/Pictures/2000xAny/2/2/8/132228_Computational-chemistry-concept_GettyImages-503260821_credit-DigitalVision-Vectors_Getty-Images.jpg",
             width=10000
         )
         
