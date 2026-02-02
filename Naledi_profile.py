@@ -5,25 +5,24 @@ import streamlit as st
 import numpy as np
 
 # Title of the app
-st.title("NALEDI KHATI MSC")
+st.title("NALEDI KHATI")
 
 # Collect basic information
 name = "**Naledi Khati**"
 field = "**Computational Chemistry**"
 Institution = "**University of the Witwatersrand**"
 
-# -----------------------
+
 # Page configuration
-# -----------------------
+
 st.set_page_config(
     page_title="Researcher Profile",
     page_icon="🧪",
     layout="wide"
 )
 
-# -----------------------
 # Sidebar
-# -----------------------
+
 st.sidebar.title("Profile Navigation")
 section = st.sidebar.radio(
     "Jump to:",
@@ -32,9 +31,8 @@ section = st.sidebar.radio(
 
 st.sidebar.markdown("---")
 
-# -----------------------
 # Header
-# -----------------------
+
 st.subheader("Electrochemistry | Energy Materials | Machine Learning")
 st.write(
     "Translating fundamental science into scalable energy solutions. "
@@ -46,9 +44,9 @@ st.write(f"Institution: {Institution}")
 
 st.markdown("---")
 
-# -----------------------
+
 # About
-# -----------------------
+
 if section == "About":
     col1, col2 = st.columns([1, 2])
 
@@ -62,15 +60,14 @@ if section == "About":
         st.markdown("### About Me")
         st.write(
             """
-            I am a researcher specializing in **electrocatalysis and energy storage materials**.
-            My work sits at the intersection of **electrochemistry, computational modeling,
-            and machine learning**, with a focus on sustainable battery technologies.
+            I am a researcher specializing in electrocatalysis and energy storage materials.
+            My work sits at the intersection of lectrochemistry, computational modeling,
+            and machine learning, with a focus on sustainable battery technologies.
             """
         )
 
-# -----------------------
 # Research Interests
-# -----------------------
+
 elif section == "Research Interests":
     st.markdown("### Research Interests")
     st.markdown(
@@ -84,9 +81,8 @@ elif section == "Research Interests":
         """
     )
 
-# -----------------------
 # Skills
-# -----------------------
+
 elif section == "Skills":
     st.markdown("### Technical Skill Set")
 
@@ -112,9 +108,8 @@ elif section == "Skills":
             """
         )
 
-# -----------------------
 # Contact
-# -----------------------
+
 elif section == "Contact":
     st.markdown("### Contact")
 
